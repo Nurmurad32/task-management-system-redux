@@ -8,6 +8,7 @@ const Tasks = lazy(() => import('../pages/Tasks'));
 const Profile = lazy(() => import('../pages/Profile'));
 const Login = lazy(() => import('../pages/Login'));
 const Signup = lazy(() => import('../pages/Signup'));
+const NotFound = lazy(() => import('../pages/NotFound'));
 
 
 
@@ -29,6 +30,9 @@ const routes = createBrowserRouter([
   },
   {
     path: '/signup', element: <Suspense fallback={<Loading />}> <Signup /> </Suspense>,
+  },
+  {
+    path: '*', element: <Suspense fallback={<Loading />}> <NotFound /> </Suspense>,
   },
 ]);
 

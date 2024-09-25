@@ -15,29 +15,33 @@ This project is a Task Management System built using the MERN stack (MongoDB, Ex
 - Git
 
 ## GitHub Repository
-- Client Side:
-- Server Side: 
+- Client Side: https://github.com/Nurmurad32/task-management-system-redux
+- Server Side: https://github.com/Nurmurad32/task-management-system-redux-server
 
 ## Setup Instructions
 
 1. **Clone the Repository of client & server**
 
    ```bash
-   git clone my-repository
-   cd task-management-system
+   # Client Repository
+   git clone [Repository](https://github.com/Nurmurad32/task-management-system-redux.git)
+
+   # Server Repository
+   git clone [Repository](https://github.com/Nurmurad32/task-management-system-redux-server.git)
 
 2. **Install Dependencies & Run the Application**
    
     ```bash
+    # Install client dependencies
+    cd folder_name
+    yarn
+    yarn dev
+
     # Install server dependencies
-    cd server
+    cd folder_name
     npm install
     npm run dev
 
-    # Install client dependencies
-    cd ../client
-    yarn
-    yarn dev
 
 3. **Configure Environment Variables for server**
    Create a .env file in the server directory with the following variables
