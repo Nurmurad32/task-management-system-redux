@@ -35,7 +35,7 @@ const Login = () => {
     //     <img src={loginImage} className="h-full w-full" alt="" />
     //   </div>
     <div className="grid h-[100vh] place-items-center mx-auto bg-primary/5 py-8">
-      <div className="shadow-lg w-full max-w-sm rounded-lg px-6 md:px-10 py-8">
+      <div className="shadow-lg w-full max-w-sm rounded-lg px-6 md:px-10 py-8 bg-white">
         <h1 className="mb-10 font-medium text-2xl text-center">Login</h1>
         <form className="space-y-3 w-full" onSubmit={handleSubmit(onSubmit)}>
           <div className="flex flex-col items-start">
@@ -82,7 +82,7 @@ const Login = () => {
           </div>
         </form>
       </div>
-      <div className='shadow-lg w-full max-w-sm rounded-lg px-6 md:px-10 py-8'>
+      <div className='shadow-lg w-full max-w-sm rounded-lg px-6 md:px-10 py-4 bg-white'>
         <div className='text-center'>
           <p className='text-center'>
             <span className="text-primary hover:underline cursor-pointer">Email:</span>

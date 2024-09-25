@@ -47,7 +47,7 @@ const Signup = () => {
   return (
     // <div className="flex mx-auto h-screen items-center justify-center bg-primary/5">
       <div className="grid place-items-center mx-auto bg-primary/5 py-8">
-        <div className="shadow-lg w-full max-w-sm rounded-lg px-6 md:px-10 py-8">
+        <div className="shadow-lg w-full max-w-sm rounded-lg px-6 md:px-10 py-8 bg-white">
           <h1 className="mb-8 font-medium text-2xl text-center">Sign up</h1>
           <form className="space-y-5 w-full" onSubmit={handleSubmit(onSubmit)}>
             <div className="flex flex-col items-start">
