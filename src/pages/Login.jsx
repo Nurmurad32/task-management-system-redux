@@ -86,7 +86,7 @@ const Login = () => {
         <div className='text-center'>
           <p className='text-center'>
             <span className="text-primary hover:underline cursor-pointer">Email:</span>
-            <span > murad@gmail.com </span>
+            <span > murad1@gmail.com </span>
           </p>
           <p className='text-center'>
             <span className="text-primary hover:underline cursor-pointer">Pass:</span>
