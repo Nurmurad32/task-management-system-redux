@@ -35,54 +35,66 @@ const Login = () => {
     //     <img src={loginImage} className="h-full w-full" alt="" />
     //   </div>
     <div className="grid h-[100vh] place-items-center mx-auto bg-primary/5 py-8">
-        <div className="shadow-lg w-full max-w-sm rounded-lg px-6 md:px-10 py-8">
-          <h1 className="mb-10 font-medium text-2xl text-center">Login</h1>
-          <form className="space-y-3 w-full" onSubmit={handleSubmit(onSubmit)}>
-            <div className="flex flex-col items-start">
-              <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                className="w-full rounded-md"
-                {...register('email', { required: 'Email is required' })}
-                // required
-              />
-              {errors.email && (
-                <p className="text-red-500 text-sm">{errors.email?.message}</p>
-              )}
-            </div>
-            <div className="flex flex-col items-start">
-              <label htmlFor="password">Password</label>
-              <input
-                type="password"
-                id="password"
-                className="w-full rounded-md"
-                {...register('password', { required: 'Password is required' })}
-                // required
-              />
-              {errors.password && (
-                <p className="text-red-500 text-sm">{errors.password.message}</p>
-              )}
-            </div>
-            <div className="relative !mt-8">
-              <button type="submit" className="btn btn-primary w-full">
-                Login
-              </button>
-            </div>
-            <div className='text-center'>
-              <p>
-                Don&apos;t have an account?{' '}
-                <span
-                  className="text-primary hover:underline cursor-pointer"
-                  onClick={() => navigate('/signup')}
-                >
-                  Sign up
-                </span>
-              </p>
-            </div>
-          </form>
+      <div className="shadow-lg w-full max-w-sm rounded-lg px-6 md:px-10 py-8">
+        <h1 className="mb-10 font-medium text-2xl text-center">Login</h1>
+        <form className="space-y-3 w-full" onSubmit={handleSubmit(onSubmit)}>
+          <div className="flex flex-col items-start">
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              className="w-full rounded-md"
+              {...register('email', { required: 'Email is required' })}
+            // required
+            />
+            {errors.email && (
+              <p className="text-red-500 text-sm">{errors.email?.message}</p>
+            )}
+          </div>
+          <div className="flex flex-col items-start">
+            <label htmlFor="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              className="w-full rounded-md"
+              {...register('password', { required: 'Password is required' })}
+            // required
+            />
+            {errors.password && (
+              <p className="text-red-500 text-sm">{errors.password.message}</p>
+            )}
+          </div>
+          <div className="relative !mt-8">
+            <button type="submit" className="btn btn-primary w-full">
+              Login
+            </button>
+          </div>
+          <div className='text-center'>
+            <p>
+              Don&apos;t have an account?{' '}
+              <span
+                className="text-primary hover:underline cursor-pointer"
+                onClick={() => navigate('/signup')}
+              >
+                Sign up
+              </span>
+            </p>
+          </div>
+        </form>
+      </div>
+      <div className='shadow-lg w-full max-w-sm rounded-lg px-6 md:px-10 py-8'>
+        <div className='text-center'>
+          <p className='text-center'>
+            <span className="text-primary hover:underline cursor-pointer">Email:</span>
+            <span > murad@gmail.com </span>
+          </p>
+          <p className='text-center'>
+            <span className="text-primary hover:underline cursor-pointer">Pass:</span>
+            <span > 12345 </span>
+          </p>
         </div>
       </div>
+    </div>
     // </div>
   );
 };

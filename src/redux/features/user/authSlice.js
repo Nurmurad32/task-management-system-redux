@@ -84,7 +84,7 @@ export const updateUserProfile = createAsyncThunk(
         return rejectWithValue('No token found.');
       }
 
-      const response = await axios.put('/profile', updateData);
+      const response = await axios.patch('/profile', updateData);
       return response.data.user;
     } catch (err) {
       return rejectWithValue(err.response.data.error || 'Failed to update profile.');
